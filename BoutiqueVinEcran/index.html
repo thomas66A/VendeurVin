@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Distribution</title>
+</head>
+<body>
+<div id="global">
+    <div id="blocProduit">
+        <h2>PRODUITS</h2>
+        <div id="produits">
+            <h3>Les vins blancs</h3>
+
+            <div class="categorie conteneur" id="blanc" data-cat="blanc">
+                
+            </div>
+            <button class="addWine" id="newWhite" data-cat="blanc">NOUVEAU BLANC</button>
+            <h3>Les vins rosés</h3>
+            <div class="categorie conteneur " id="rose" data-cat="rose">
+                        
+            </div>
+            <button class="addWine" id="newRose"  data-cat="rose">NOUVEAU ROSE</button>
+            <h3>Les vins rouges</h3>
+            <div class="categorie conteneur" id="rouge" data-cat="rouge">
+                        
+            </div>
+            <button class="addWine" id="newRouge"  data-cat="rouge">NOUVEAU ROUGE</button>
+
+        </div>
+    </div>
+
+    <div id="blocVendeur">
+            
+        <div class="nomVendeur">   
+            <div class="nom1" id="vendeur2" data-id="2"><p class="vendeur">VENDEUR 2</p></div>
+            <div class="nom1" id="vendeur3" data-id="3"><p class="vendeur">VENDEUR 3</p></div>
+            <div class="nom1" id="vendeur4" data-id="4"><p class="vendeur">VENDEUR 4</p></div>
+            
+            
+            <h1 id="ici1"></h1>
+            <div class="vueProduitsVendus conteneur"  id="ici" data-cat="all"></div>
+            <div class="putShow"></div>
+        </div>
+    </div>
+</div>
+    
+    <h1 id="titre">Gestion stock et vendeurs</h1>
+<div id="login">
+
+    <div id="loginBox">
+        <label>NOM:&nbsp;<input type="input" id="nom"></label>
+        <label>Mot de passe:&nbsp;<input type="password" id="pwd"></label>
+        <button id="ValidLogin">VALIDER</button>
+    </div>
+    
+</div>
+<div id="logout"><p>x</p></div>
+ <div id="descriptVin">
+     <div id="descriptBox">
+     <label>Nom du vin:&nbsp;<input type="text" id="nomvin"></label>
+     <label>Prix de ce vin:&nbsp;<input type="number" id="prix"></label>
+     <label>Description:&nbsp;<input type="text" id="description"></label>
+     <button class="validWine">VALIDER</button>
+     </div>
+</div>   
+
+    
+<script src="JS/system.js"></script>
+<script src="JS/jquery.js"></script>
+<script src="JS/main.js"></script>
+<script>
+    System.import('main')
+      .catch(function(err){ console.error(err); });
+</script>
+    
+</body>
+</html>

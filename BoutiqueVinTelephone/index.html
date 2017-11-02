@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Distribution</title>
+</head>
+<body>
+        <h1 id="titre">GESTION VENDEUR DE VIN</h1>
+<div id="global">
+    <div id="blocProduit">
+        <h2>PRODUITS DISPONIBLES</h2>
+        <div id="produits">
+            <h3>Les vins blancs</h3>
+
+            <div class="categorie conteneur" id="blanc" data-cat="blanc">
+                
+            </div>
+            
+            <h3>Les vins rosés</h3>
+            <div class="categorie conteneur " id="rose" data-cat="rose">
+                        
+            </div>
+            
+            <h3>Les vins rouges</h3>
+            <div class="categorie conteneur" id="rouge" data-cat="rouge">
+                        
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div id="blocVendeur">
+            <h1 id="mesventes">MES VENTES</h1>
+        <div class="nomVendeur">   
+            <div class="vueProduitsVendus conteneur"  id="ici" data-cat="all"></div>
+            <div class="putShow"></div>
+        </div>
+    </div>
+</div>
+    
+    
+<div id="login">
+
+    <div id="loginBox">
+        <label><p>NOM:&nbsp;</p><input type="input" id="nom"></label>
+        <label><p>Mot de passe:&nbsp;</p><input type="password" id="pwd"></label>
+        <button id="ValidLogin">VALIDER</button>
+    </div>
+    
+</div>
+<div id="logout"><p>x</p></div>
+<div id="dispo">
+    <button>DISPONIBLE</button>
+</div>
+
+    
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="JS/main.js"></script>
+<script>
+    System.import('main')
+      .catch(function(err){ console.error(err); });
+</script>
+    
+</body>
+</html>
